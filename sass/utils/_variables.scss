@@ -11,3 +11,41 @@ $colour-menu3: #edefef;
 $colour-menu3-title: #0000ff;
 $colour-menu4: #fdfffd;
 $colour-menu4-title: #79c55a;
+
+@font-face {
+    font-family: 'Ma Shan Zheng';
+    src: url('../fonts/MaShanZheng-Regular.ttf');
+}
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: url('../fonts/Vollkorn-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Vollkorn-italic';
+    src: url('../fonts/Vollkorn-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../fonts/ShadowsIntoLight-Regular.ttf');
+}
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.ttf');
+}
+
+$font-menu1-title: 'Ma Shan Zheng';
+$font-menu1-text: 'Caveat';
+$font-menu2-title: 'Vollkorn';
+$font-menu2-text: 'Vollkorn-italic';
+$font-menu3-title: 'Dancing Script';
+$font-menu3-text: 'Shadows Into Light';
+$font-menu4-title: 'Kaushan Script';
+$font-menu4-text: 'Shadows Into Light';

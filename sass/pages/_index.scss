@@ -4,18 +4,85 @@ main
     flex-direction: column;
     position: relative;
 }
-.block_menu
+
+.grille
 {
     margin-bottom: 110px;
     padding: 20px 40px;
     display: flex;
     flex-wrap: wrap;
-}
-.menu
-{
-    margin: 20px;
-    width: calc(25% - 41px);
-    height: 350px;
-    border: #e6e6e6 solid 0.5px;
-    box-shadow: 1.5px 1.5px 1.5px $colour-black;
+
+    &__menu
+    {
+        margin: 20px;
+        width: calc(25% - 41px);
+        height: 350px;
+        border: #e6e6e6 solid 0.5px;
+        box-shadow: 1.5px 1.5px 1.5px $colour-black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a
+        {
+            margin: 10px;
+            font-size: 1.5em;
+        }
+
+        &--la-note-enchantee
+        {
+            background-color: $colour-menu1;
+            a
+            {
+                color: $colour-menu1-title;
+                font-family: $font-menu1-title;
+                span
+                {
+                    font-family: $font-menu1-text;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &--le-chic-a-la-francaise
+        {
+            background-color: $colour-menu2;
+            a
+            {
+                color: $colour-menu2-title;
+                font-family: $font-menu2-title;
+                span
+                {
+                    font-family: $font-menu2-text;
+                }
+            }
+        }
+        &--le-delice-des-papilles
+        {
+            background-color: $colour-menu3;
+            a
+            {
+                color: $colour-menu3-title;
+                font-family: $font-menu3-title;
+                span
+                {
+                    font-family: $font-menu3-text;
+                }
+            }
+        }
+        &--la-palette-du-gout
+        {
+            background-color: $colour-menu4;
+            a
+            {
+                color: $colour-menu4-title;
+                font-family: $font-menu4-title;
+                span
+                {
+                    font-family: $font-menu4-text;
+                }
+            }
+        }
+    }
+    
 }

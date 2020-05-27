@@ -1,0 +1,73 @@
+h1
+{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+ul
+{
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+li
+{
+    list-style-type: none;
+}
+
+.menu-page
+{
+    margin: 0px 12vh 100px 12vh;
+    padding: 70px 10vh;
+    border: $colour-border solid 0.5px;
+    box-shadow: 1.5px 1.5px 1.5px $colour-border;
+    display: flex;
+    flex-direction: column;
+
+    h1
+    {
+        font-size: 3em;
+        margin: 0px;
+    }
+    h2
+    {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .smaller-title
+    {
+        font-size: 2.5em;
+        margin: 40px 0px;
+    }
+}
+
+.dishes
+{
+    font-size: 1.5em;
+    display: flex;
+    margin-bottom: 20px;
+
+    li
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__names
+    {
+        width: 90%;
+    }
+    &__prices
+    {
+        width: 10%;
+        text-align: end;
+        font-weight: bolder;
+    }
+}
+.dessert
+{
+    flex-direction: column;
+}

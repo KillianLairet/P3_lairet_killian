@@ -1,12 +1,14 @@
 header
 {
     background-color: $colour-primary;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header h1
 {
     margin: 0px;
-    padding: 20px 0px;
-    text-align: center;
     font-family: 'Arial black';
     font-size: 2em;
     color: $colour-secondary;
