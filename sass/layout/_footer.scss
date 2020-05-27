@@ -1,0 +1,16 @@
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $colour-primary;
+}
+footer a
+{
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: $colour-secondary;
+}

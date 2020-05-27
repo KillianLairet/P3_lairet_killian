@@ -1,0 +1,370 @@
+body {
+  margin: 0px;
+}
+
+#block-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+.soon {
+  background-color: #579c87;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  margin-bottom: 70px;
+  padding: 10px 50px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #fdcb46;
+}
+
+header {
+  background-color: #579c87;
+}
+
+header h1 {
+  margin: 0px;
+  padding: 20px 0px;
+  text-align: center;
+  font-family: "Arial black";
+  font-size: 2em;
+  color: #fdcb46;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #579c87;
+}
+
+footer a {
+  margin: 0px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fdcb46;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.block_menu {
+  margin-bottom: 110px;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  margin: 20px;
+  width: calc(25% - 41px);
+  height: 350px;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #000000;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-page {
+  margin: 0px 12vh 100px 12vh;
+  padding: 70px 10vh;
+  background-color: #fcdfcb;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page h1 {
+  font-size: 2em;
+  font-family: "Comic Sans MS";
+  color: #000000;
+  margin: 0px;
+}
+
+.menu-page h2 {
+  font-size: 1.5em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.dishes {
+  font-size: 1em;
+  font-family: "Comic Sans MS";
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dishes li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dishes__names {
+  width: 90%;
+}
+
+.dishes__prices {
+  width: 10%;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.dessert {
+  flex-direction: column;
+}
+
+.menu-page .smaller-title {
+  font-size: 1.5em;
+  margin: 40px 0px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-page {
+  margin: 0px 12vh 100px 12vh;
+  padding: 70px 10vh;
+  background-color: #edefef;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page h1 {
+  font-size: 2em;
+  font-family: "Comic Sans MS";
+  margin: 0px;
+  color: #0000ff;
+}
+
+.menu-page h2 {
+  font-size: 1.5em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.dishes {
+  font-size: 1em;
+  font-family: "Comic Sans MS";
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dishes li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dishes__names {
+  width: 90%;
+}
+
+.dishes__prices {
+  width: 10%;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.menu-page .smaller-title {
+  font-size: 1.5em;
+  margin: 40px 0px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-page {
+  margin: 0px 12vh 100px 12vh;
+  padding: 70px 10vh;
+  background-color: #fdfffd;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page h1 {
+  font-size: 2em;
+  font-family: "Comic Sans MS";
+  margin: 0px;
+  color: #79c55a;
+}
+
+.menu-page h2 {
+  font-size: 1.5em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.dishes {
+  font-size: 1em;
+  font-family: "Comic Sans MS";
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dishes li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dishes__names {
+  width: 90%;
+}
+
+.dishes__prices {
+  width: 10%;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.menu-page .smaller-title {
+  font-size: 1.5em;
+  margin: 40px 0px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-page {
+  margin: 0px 12vh 100px 12vh;
+  padding: 70px 10vh;
+  background-color: #fff5fe;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page h1 {
+  font-size: 2em;
+  font-family: "Comic Sans MS";
+  margin: 0px;
+  color: #a367cb;
+}
+
+.menu-page h2 {
+  font-size: 1.5em;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.dishes {
+  font-size: 1em;
+  font-family: "Comic Sans MS";
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dishes li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dishes__names {
+  width: 90%;
+}
+
+.dishes__prices {
+  width: 10%;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.dessert {
+  flex-direction: column;
+}
+
+.menu-page .smaller-title {
+  font-size: 1.5em;
+  margin: 40px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

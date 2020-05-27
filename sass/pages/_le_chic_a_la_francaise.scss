@@ -1,17 +1,3 @@
-body
-{
-    margin: 0px;
-    font-family: Arial;
-    color: #000000;
-}
-#block_page
-{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/*  MAIN    */
 h1
 {
     font-size: 2.5em;
@@ -34,9 +20,9 @@ li
 {
     margin: 0px 12vh 100px 12vh;
     padding: 70px 10vh;
-    background-color: #fcdfdb;
-    border: #e6e6e6 solid 0.5px;
-    box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+    background-color: $colour-menu2;
+    border: $colour-border solid 0.5px;
+    box-shadow: 1.5px 1.5px 1.5px $colour-border;
     display: flex;
     flex-direction: column;
 }
@@ -45,6 +31,7 @@ li
     font-size: 2em;
     font-family: 'Comic Sans MS';
     margin: 0px;
+    color: $colour-menu2-title;
 }
 .menu-page h2
 {
