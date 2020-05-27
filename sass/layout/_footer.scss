@@ -6,11 +6,17 @@ footer
     display: flex;
     justify-content: space-between;
     background-color: $colour-primary;
-}
-footer a
-{
-    margin: 0px;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: $colour-secondary;
+    a
+    {
+        margin: 0px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: $colour-secondary;
+
+        &:hover
+        {
+            animation: wiggle-effect 100ms cubic-bezier(.4,.1,.6,.9);
+            animation-iteration-count: 3;
+        }
+    }
 }

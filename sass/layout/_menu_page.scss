@@ -24,6 +24,7 @@ li
     box-shadow: 1.5px 1.5px 1.5px $colour-border;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     h1
     {
@@ -32,10 +33,19 @@ li
     }
     h2
     {
+        width: fit-content;
         font-size: 2em;
-        text-align: center;
         margin-top: 50px;
         margin-bottom: 10px;
+
+        text-decoration: none;
+        background: linear-gradient(to top, $colour-menu1-title 0%, $colour-menu1-title 2px, transparent 3px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 300ms ease;
+        &:hover
+        {
+            background-size: 100% 100%;
+        }
     }
     .smaller-title
     {
@@ -49,6 +59,7 @@ li
     font-size: 1.5em;
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
 
     li
     {

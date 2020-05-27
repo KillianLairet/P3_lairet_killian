@@ -26,6 +26,14 @@
   font-family: "Kaushan Script";
   src: url("../fonts/KaushanScript-Regular.ttf");
 }
+@keyframes wiggle-effect {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
 body {
   margin: 0px;
 }
@@ -84,12 +92,15 @@ footer {
   justify-content: space-between;
   background-color: #579c87;
 }
-
 footer a {
   margin: 0px;
   padding: 10px 20px;
   font-size: 1em;
   color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle-effect 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 3;
 }
 
 h1 {
@@ -116,16 +127,24 @@ li {
   box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .menu-page h1 {
   font-size: 3em;
   margin: 0px;
 }
 .menu-page h2 {
+  width: fit-content;
   font-size: 2em;
-  text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000 0%, #000000 2px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 300ms ease;
+}
+.menu-page h2:hover {
+  background-size: 100% 100%;
 }
 .menu-page .smaller-title {
   font-size: 2.5em;
@@ -136,6 +155,7 @@ li {
   font-size: 1.5em;
   display: flex;
   margin-bottom: 20px;
+  width: 100%;
 }
 .dishes li {
   margin-top: 10px;
@@ -281,6 +301,18 @@ main {
 
 .dishes--le-chic-a-la-francaise {
   font-family: "Vollkorn-italic";
+}
+
+.colour-menu2-top {
+  color: #c67412;
+}
+
+.colour-menu2-middle {
+  color: #a56799;
+}
+
+.colour-menu2-bottom {
+  color: #6e4ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
