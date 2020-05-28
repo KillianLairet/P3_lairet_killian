@@ -29,14 +29,13 @@ li
     h1
     {
         font-size: 3em;
-        margin: 0px;
+        margin: 0px 0px 50px 0px;
     }
     h2
     {
         width: fit-content;
         font-size: 2em;
-        margin-top: 50px;
-        margin-bottom: 10px;
+        margin: 10px 10px;
 
         text-decoration: none;
         background: linear-gradient(to top, $colour-menu1-title 0%, $colour-menu1-title 2px, transparent 3px) no-repeat;
@@ -53,12 +52,23 @@ li
         margin: 40px 0px;
     }
 }
+.h2-design
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    &__right-bar
+    {
+        transform: scaleX(-1);
+    }
+}
 
 .dishes
 {
     font-size: 1.5em;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
     width: 100%;
 
     li

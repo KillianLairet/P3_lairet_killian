@@ -24,6 +24,15 @@ main
         align-items: center;
         justify-content: center;
 
+        opacity: 100%;
+        transform: scale(1);
+        
+        &:hover {
+            transition: ease .3s;
+            opacity: 50%;
+            transform: scale(1.1);
+        }
+
         a
         {
             margin: 10px;
@@ -33,6 +42,7 @@ main
         &--la-note-enchantee
         {
             background-color: $colour-menu1;
+
             a
             {
                 color: $colour-menu1-title;
@@ -85,4 +95,8 @@ main
         }
     }
     
+}
+.music-note-index
+{
+    height: 2.5em;
 }

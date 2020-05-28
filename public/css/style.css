@@ -34,6 +34,11 @@
     transform: translateX(-2%);
   }
 }
+@keyframes dots {
+  50% {
+    transform: translateY(10px);
+  }
+}
 body {
   margin: 0px;
 }
@@ -64,9 +69,32 @@ body {
   width: fit-content;
   margin-bottom: 70px;
   padding: 10px 50px;
+  display: flex;
+}
+.button p {
+  margin: 0px;
   font-size: 1.5em;
   letter-spacing: 1px;
   color: #fdcb46;
+  margin-right: 7px;
+}
+.button__loading span {
+  width: 5px;
+  height: 5px;
+  margin: 0px 1px;
+  background-color: #fdcb46;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.button__loading span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.button__loading span:nth-child(3) {
+  animation-delay: 0.8s;
 }
 
 header {
@@ -131,13 +159,12 @@ li {
 }
 .menu-page h1 {
   font-size: 3em;
-  margin: 0px;
+  margin: 0px 0px 50px 0px;
 }
 .menu-page h2 {
   width: fit-content;
   font-size: 2em;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin: 10px 10px;
   text-decoration: none;
   background: linear-gradient(to top, #000000 0%, #000000 2px, transparent 3px) no-repeat;
   background-size: 0% 100%;
@@ -151,10 +178,20 @@ li {
   margin: 40px 0px;
 }
 
+.h2-design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.h2-design__right-bar {
+  transform: scaleX(-1);
+}
+
 .dishes {
   font-size: 1.5em;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   width: 100%;
 }
 .dishes li {
@@ -196,6 +233,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 100%;
+  transform: scale(1);
+}
+.grille__menu:hover {
+  transition: ease 0.3s;
+  opacity: 50%;
+  transform: scale(1.1);
 }
 .grille__menu a {
   margin: 10px;
@@ -243,6 +287,10 @@ main {
   font-family: "Shadows Into Light";
 }
 
+.music-note-index {
+  height: 2.5em;
+}
+
 .menu-page--la-note-enchantee {
   background-color: #fcdfcb;
 }
@@ -253,9 +301,21 @@ main {
 .menu-page--la-note-enchantee h2 {
   font-family: "Caveat";
 }
+.menu-page--la-note-enchantee__bottom-title {
+  display: flex;
+  flex-direction: row;
+}
 
 .dishes--la-note-enchantee {
   font-family: "Caveat";
+}
+
+.music-note {
+  margin-bottom: 20px;
+}
+.music-note--small {
+  height: 3.5em;
+  margin: auto 20px;
 }
 
 .menu-page--le-delice-des-papilles {

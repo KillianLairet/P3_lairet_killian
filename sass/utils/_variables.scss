@@ -63,3 +63,9 @@ $wiggle-effect: 2%;
         transform: translateX(-$wiggle-effect);
     }
 }
+
+@keyframes dots {
+    50% {
+        transform: translateY(10px);
+    }
+}

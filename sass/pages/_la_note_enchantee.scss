@@ -11,8 +11,24 @@
     {
         font-family: $font-menu1-text;
     }
+    &__bottom-title
+    {
+        display: flex;
+        flex-direction: row;
+    }
 }
 .dishes--la-note-enchantee
 {
     font-family: $font-menu1-text;
+}
+
+.music-note
+{
+    margin-bottom: 20px;
+
+    &--small
+    {
+        height: 3.5em;
+        margin: auto 20px;
+    }
 }
