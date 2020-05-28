@@ -26,9 +26,17 @@
 {
     margin-bottom: 20px;
 
+    @media screen and (max-width: 768px) {
+        height: 1em;
+        margin-bottom: 10px;
+    }
     &--small
     {
         height: 3.5em;
         margin: auto 20px;
+        @media screen and (max-width: 768px) {
+            height: 1em;
+            margin: auto 10px;
+        }
     }
 }

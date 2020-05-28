@@ -53,6 +53,21 @@ $font-menu3-text: 'Shadows Into Light';
 $font-menu4-title: 'Kaushan Script';
 $font-menu4-text: 'Shadows Into Light';
 
+$fontSize-header: 2em;
+$fontSize-header-mobile: 1.2em;
+$fontSize-footer: 1em;
+$fontSize-footer-mobile: 0.6em;
+$fontSize-button: 1.5em;
+$fontSize-button-mobile: 0.6em;
+$fontSize-index-a: 1.5em;
+$fontSize-index-a-mobile: 0.4em;
+$fontSize-menu-h1: 3em;
+$fontSize-menu-h1-mobile: 1em;
+$fontSize-menu-h2: 1.5em;
+$fontSize-menu-h2-mobile: 0.45em;
+$fontSize-menu-text: 1.5em;
+$fontSize-menu-text-mobile: 0.45em;
+
 $wiggle-effect: 2%;
 
 @keyframes wiggle-effect {
@@ -66,6 +81,6 @@ $wiggle-effect: 2%;
 
 @keyframes dots {
     50% {
-        transform: translateY(10px);
+        transform: translateY(7px);
     }
 }

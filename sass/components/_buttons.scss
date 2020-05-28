@@ -11,11 +11,20 @@
     padding: 10px 50px;
     display: flex;
     p {
-        margin: 0px;
-        font-size: 1.5em;
+        margin: auto;
+        font-size: $fontSize-button;
         letter-spacing: 1px;
         color: $colour-secondary;
         margin-right: 7px;
+
+        @media screen and (max-width: 1028px) {
+            font-size: $fontSize-button-mobile;
+        }
+    }
+
+    @media screen and (max-width: 1028px) {
+        padding: 5px 30px;
+        margin-bottom: 50px;
     }
     
     &__loading span
@@ -30,6 +39,12 @@
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+
+        @media screen and (max-width: 1028px) {
+            width: 2px;
+            height: 2px;
+            margin: 5px 0.1px;
+        }
 
         &:nth-child(2) {
             animation-delay: 0.4s;

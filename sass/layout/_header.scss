@@ -1,7 +1,7 @@
 header
 {
     background-color: $colour-primary;
-    height: 85px;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +10,10 @@ header h1
 {
     margin: 0px;
     font-family: 'Arial black';
-    font-size: 2em;
+    font-size: $fontSize-header;
     color: $colour-secondary;
+
+    @media screen and (max-width: 768px) {
+        font-size: $fontSize-header-mobile;
+    }
 }
