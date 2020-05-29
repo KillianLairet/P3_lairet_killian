@@ -1,0 +1,126 @@
+h1
+{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.3em;
+        margin: 15px auto;
+    }
+}
+ul
+{
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+li
+{
+    list-style-type: none;
+}
+
+.menu-page
+{
+    margin: 0px 12vh 100px 12vh;
+    padding: 70px 5vh;
+    border: $colour-border solid 0.5px;
+    box-shadow: 1.5px 1.5px 1.5px $colour-border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin: 0px 5vh auto 5vh;
+        padding: 20px 3vh;
+    }
+
+    h1
+    {
+        font-size: $fontSize-menu-h1;
+        margin: 0px 0px 50px 0px;
+
+        @media screen and (max-width: 768px) {
+            font-size: $fontSize-menu-h1-mobile;
+            margin-bottom: 15px;
+        }
+    }
+    h2
+    {
+        width: fit-content;
+        font-size: $fontSize-menu-h2;
+        margin: 10px 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: $fontSize-menu-h2-mobile;
+        }
+
+        text-decoration: none;
+        background: linear-gradient(to top, $colour-menu1-title 0%, $colour-menu1-title 2px, transparent 3px) no-repeat;
+        background-size: 0% 100%;
+        transition: background-size 300ms ease;
+        &:hover
+        {
+            background-size: 100% 100%;
+        }
+    }
+    .smaller-title
+    {
+        font-size: 2.5em;
+        margin: 40px 0px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 0.7em;
+            margin: 9px auto;
+        }
+    
+    }
+}
+.h2-design
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    &__right-bar
+    {
+        transform: scaleX(-1);
+    }
+}
+
+.dishes
+{
+    font-size: $fontSize-menu-text;
+    display: flex;
+    margin-bottom: 70px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        font-size: $fontSize-menu-text-mobile;
+        margin-bottom: 10px;
+    }
+
+    li
+    {
+        margin: 10px 0px;
+        @media screen and (max-width: 768px) {
+            margin: 3px 0px;
+        }    
+    }
+
+    &__names
+    {
+        width: 90%;
+    }
+    &__prices
+    {
+        width: 10%;
+        text-align: end;
+        font-weight: bolder;
+    }
+}
+.dessert
+{
+    flex-direction: column;
+}

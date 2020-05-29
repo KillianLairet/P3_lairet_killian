@@ -1,0 +1,113 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.grille
+{
+    margin-bottom: 110px;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__menu
+    {
+        margin: 20px;
+        width: calc(25% - 41px);
+        height: 350px;
+        border: #e6e6e6 solid 0.5px;
+        box-shadow: 1.5px 1.5px 1.5px $colour-black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 100%;
+        transform: scale(1);
+        
+        &:hover {
+            transition: ease .3s;
+            opacity: 50%;
+            transform: scale(1.1);
+        }
+
+        a
+        {
+            margin: 10px;
+            font-size: $fontSize-index-a;
+        }
+
+        &--la-note-enchantee
+        {
+            background-color: $colour-menu1;
+
+            a
+            {
+                color: $colour-menu1-title;
+                font-family: $font-menu1-title;
+                span
+                {
+                    font-family: $font-menu1-text;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &--le-chic-a-la-francaise
+        {
+            background-color: $colour-menu2;
+            a
+            {
+                color: $colour-menu2-title;
+                font-family: $font-menu2-title;
+                span
+                {
+                    font-family: $font-menu2-text;
+                }
+            }
+        }
+        &--le-delice-des-papilles
+        {
+            background-color: $colour-menu3;
+            a
+            {
+                color: $colour-menu3-title;
+                font-family: $font-menu3-title;
+                span
+                {
+                    font-family: $font-menu3-text;
+                }
+            }
+        }
+        &--la-palette-du-gout
+        {
+            background-color: $colour-menu4;
+            a
+            {
+                color: $colour-menu4-title;
+                font-family: $font-menu4-title;
+                span
+                {
+                    font-family: $font-menu4-text;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            font-size: $fontSize-index-a-mobile;
+            width: calc(50% - 31px);
+            height: 30vh;
+            margin: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        padding: 10px;
+        margin-bottom: 75px;
+    }
+}
+.music-note-index
+{
+    height: 2.5em;
+}

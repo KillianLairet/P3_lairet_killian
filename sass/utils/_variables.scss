@@ -1,0 +1,86 @@
+$colour-primary: #579c87;
+$colour-secondary: #fdcb46;
+$colour-black: #000000;
+$colour-white: #ffffff;
+$colour-border: #e6e6e6;
+$colour-menu1: #fcdfcb;
+$colour-menu1-title: #000000;
+$colour-menu2: #fff5fe;
+$colour-menu2-title: #a367cb;
+$colour-menu2-top: #c67412;
+$colour-menu2-middle: #a56799;
+$colour-menu2-bottom: #6e4ccc;
+$colour-menu3: #edefef;
+$colour-menu3-title: #0000ff;
+$colour-menu4: #fdfffd;
+$colour-menu4-title: #79c55a;
+
+@font-face {
+    font-family: 'Ma Shan Zheng';
+    src: url('../fonts/MaShanZheng-Regular.ttf');
+}
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: url('../fonts/Vollkorn-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Vollkorn-italic';
+    src: url('../fonts/Vollkorn-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../fonts/ShadowsIntoLight-Regular.ttf');
+}
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.ttf');
+}
+
+$font-menu1-title: 'Ma Shan Zheng';
+$font-menu1-text: 'Caveat';
+$font-menu2-title: 'Vollkorn';
+$font-menu2-text: 'Vollkorn-italic';
+$font-menu3-title: 'Dancing Script';
+$font-menu3-text: 'Shadows Into Light';
+$font-menu4-title: 'Kaushan Script';
+$font-menu4-text: 'Shadows Into Light';
+
+$fontSize-header: 2em;
+$fontSize-header-mobile: 1.2em;
+$fontSize-footer: 1em;
+$fontSize-footer-mobile: 0.6em;
+$fontSize-button: 1.5em;
+$fontSize-button-mobile: 0.6em;
+$fontSize-index-a: 1.5em;
+$fontSize-index-a-mobile: 0.4em;
+$fontSize-menu-h1: 3em;
+$fontSize-menu-h1-mobile: 1em;
+$fontSize-menu-h2: 1.5em;
+$fontSize-menu-h2-mobile: 0.45em;
+$fontSize-menu-text: 1.5em;
+$fontSize-menu-text-mobile: 0.45em;
+
+$wiggle-effect: 2%;
+
+@keyframes wiggle-effect {
+    25% {
+        transform: translateX($wiggle-effect);
+    }
+    75% {
+        transform: translateX(-$wiggle-effect);
+    }
+}
+
+@keyframes dots {
+    50% {
+        transform: translateY(7px);
+    }
+}

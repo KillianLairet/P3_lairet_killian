@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "Ma Shan Zheng";
+  src: url("../fonts/MaShanZheng-Regular.ttf");
+}
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-Regular.ttf");
+}
+@font-face {
+  font-family: "Vollkorn";
+  src: url("../fonts/Vollkorn-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Vollkorn-italic";
+  src: url("../fonts/Vollkorn-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url("../fonts/ShadowsIntoLight-Regular.ttf");
+}
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+@keyframes wiggle-effect {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
+@keyframes dots {
+  50% {
+    transform: translateY(7px);
+  }
+}
+body {
+  margin: 0px;
+}
+
+#block-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+.button {
+  background-color: #579c87;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  margin-bottom: 70px;
+  padding: 10px 50px;
+  display: flex;
+}
+.button p {
+  margin: auto;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #fdcb46;
+  margin-right: 7px;
+}
+@media screen and (max-width: 1028px) {
+  .button p {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .button {
+    padding: 5px 30px;
+    margin-bottom: 50px;
+  }
+}
+.button__loading span {
+  width: 5px;
+  height: 5px;
+  margin: 0px 1px;
+  background-color: #fdcb46;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@media screen and (max-width: 1028px) {
+  .button__loading span {
+    width: 2px;
+    height: 2px;
+    margin: 5px 0.1px;
+  }
+}
+.button__loading span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.button__loading span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+header {
+  background-color: #579c87;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0px;
+  font-family: "Arial black";
+  font-size: 2em;
+  color: #fdcb46;
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #579c87;
+}
+footer a {
+  margin: 0px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle-effect 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 3;
+}
+@media screen and (max-width: 1028px) {
+  footer a {
+    font-size: 0.6em;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.3em;
+    margin: 15px auto;
+  }
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-page {
+  margin: 0px 12vh 100px 12vh;
+  padding: 70px 5vh;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .menu-page {
+    margin: 0px 5vh auto 5vh;
+    padding: 20px 3vh;
+  }
+}
+.menu-page h1 {
+  font-size: 3em;
+  margin: 0px 0px 50px 0px;
+}
+@media screen and (max-width: 768px) {
+  .menu-page h1 {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+}
+.menu-page h2 {
+  width: fit-content;
+  font-size: 1.5em;
+  margin: 10px 10px;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000 0%, #000000 2px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 300ms ease;
+}
+@media screen and (max-width: 768px) {
+  .menu-page h2 {
+    font-size: 0.45em;
+  }
+}
+.menu-page h2:hover {
+  background-size: 100% 100%;
+}
+.menu-page .smaller-title {
+  font-size: 2.5em;
+  margin: 40px 0px;
+}
+@media screen and (max-width: 768px) {
+  .menu-page .smaller-title {
+    font-size: 0.7em;
+    margin: 9px auto;
+  }
+}
+
+.h2-design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.h2-design__right-bar {
+  transform: scaleX(-1);
+}
+
+.dishes {
+  font-size: 1.5em;
+  display: flex;
+  margin-bottom: 70px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .dishes {
+    font-size: 0.45em;
+    margin-bottom: 10px;
+  }
+}
+.dishes li {
+  margin: 10px 0px;
+}
+@media screen and (max-width: 768px) {
+  .dishes li {
+    margin: 3px 0px;
+  }
+}
+.dishes__names {
+  width: 90%;
+}
+.dishes__prices {
+  width: 10%;
+  text-align: end;
+  font-weight: bolder;
+}
+
+.dessert {
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.grille {
+  margin-bottom: 110px;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grille__menu {
+  margin: 20px;
+  width: calc(25% - 41px);
+  height: 350px;
+  border: #e6e6e6 solid 0.5px;
+  box-shadow: 1.5px 1.5px 1.5px #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  transform: scale(1);
+}
+.grille__menu:hover {
+  transition: ease 0.3s;
+  opacity: 50%;
+  transform: scale(1.1);
+}
+.grille__menu a {
+  margin: 10px;
+  font-size: 1.5em;
+}
+.grille__menu--la-note-enchantee {
+  background-color: #fcdfcb;
+}
+.grille__menu--la-note-enchantee a {
+  color: #000000;
+  font-family: "Ma Shan Zheng";
+}
+.grille__menu--la-note-enchantee a span {
+  font-family: "Caveat";
+  text-transform: uppercase;
+}
+.grille__menu--le-chic-a-la-francaise {
+  background-color: #fff5fe;
+}
+.grille__menu--le-chic-a-la-francaise a {
+  color: #a367cb;
+  font-family: "Vollkorn";
+}
+.grille__menu--le-chic-a-la-francaise a span {
+  font-family: "Vollkorn-italic";
+}
+.grille__menu--le-delice-des-papilles {
+  background-color: #edefef;
+}
+.grille__menu--le-delice-des-papilles a {
+  color: #0000ff;
+  font-family: "Dancing Script";
+}
+.grille__menu--le-delice-des-papilles a span {
+  font-family: "Shadows Into Light";
+}
+.grille__menu--la-palette-du-gout {
+  background-color: #fdfffd;
+}
+.grille__menu--la-palette-du-gout a {
+  color: #79c55a;
+  font-family: "Kaushan Script";
+}
+.grille__menu--la-palette-du-gout a span {
+  font-family: "Shadows Into Light";
+}
+@media screen and (max-width: 1100px) {
+  .grille__menu {
+    font-size: 0.4em;
+    width: calc(50% - 31px);
+    height: 30vh;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .grille {
+    padding: 10px;
+    margin-bottom: 75px;
+  }
+}
+
+.music-note-index {
+  height: 2.5em;
+}
+
+.menu-page--la-note-enchantee {
+  background-color: #fcdfcb;
+}
+.menu-page--la-note-enchantee h1 {
+  font-family: "Ma Shan Zheng";
+  color: #000000;
+}
+.menu-page--la-note-enchantee h2 {
+  font-family: "Caveat";
+}
+.menu-page--la-note-enchantee__bottom-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.dishes--la-note-enchantee {
+  font-family: "Caveat";
+}
+
+.music-note {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .music-note {
+    height: 1em;
+    margin-bottom: 10px;
+  }
+}
+.music-note--small {
+  height: 3.5em;
+  margin: auto 20px;
+}
+@media screen and (max-width: 768px) {
+  .music-note--small {
+    height: 1em;
+    margin: auto 10px;
+  }
+}
+
+.menu-page--le-delice-des-papilles {
+  background-color: #edefef;
+}
+.menu-page--le-delice-des-papilles h1 {
+  font-family: "Dancing Script";
+  color: #0000ff;
+}
+.menu-page--le-delice-des-papilles h2 {
+  font-family: "Shadows Into Light";
+}
+
+.dishes--le-delice-des-papilles {
+  font-family: "Shadows Into Light";
+}
+
+.menu-page--la-palette-du-gout {
+  background-color: #fdfffd;
+}
+.menu-page--la-palette-du-gout h1 {
+  font-family: "Kaushan Script";
+  color: #79c55a;
+}
+.menu-page--la-palette-du-gout h2 {
+  font-family: "Shadows Into Light";
+}
+
+.dishes--la-palette-du-gout {
+  font-family: "Shadows Into Light";
+}
+
+.menu-page--le-chic-a-la-francaise {
+  background-color: #fff5fe;
+}
+.menu-page--le-chic-a-la-francaise h1 {
+  font-family: "Vollkorn";
+  color: #a367cb;
+}
+.menu-page--le-chic-a-la-francaise h2 {
+  font-family: "Vollkorn-italic";
+}
+
+.dishes--le-chic-a-la-francaise {
+  font-family: "Vollkorn-italic";
+}
+
+.colour-menu2-top {
+  color: #c67412;
+}
+
+.colour-menu2-middle {
+  color: #a56799;
+}
+
+.colour-menu2-bottom {
+  color: #6e4ccc;
+}
+
+/*# sourceMappingURL=style.css.map */

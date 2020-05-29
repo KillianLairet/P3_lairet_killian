@@ -1,0 +1,26 @@
+footer
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $colour-primary;
+    a
+    {
+        margin: 0px;
+        padding: 10px 20px;
+        font-size: $fontSize-footer;
+        color: $colour-secondary;
+
+        &:hover
+        {
+            animation: wiggle-effect 100ms cubic-bezier(.4,.1,.6,.9);
+            animation-iteration-count: 3;
+        }
+
+        @media screen and (max-width: 1028px) {
+            font-size: $fontSize-footer-mobile;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.menu-page--la-palette-du-gout
+{
+    background-color: $colour-menu4;
+
+    h1
+    {
+        font-family: $font-menu4-title;
+        color: $colour-menu4-title;
+    }
+    h2
+    {
+        font-family: $font-menu4-text;
+    } 
+}
+
+
+.dishes--la-palette-du-gout
+{
+    font-family: $font-menu4-text;
+}
