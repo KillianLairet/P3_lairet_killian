@@ -10,19 +10,19 @@
     margin-bottom: 70px;
     padding: 10px 50px;
     display: flex;
-    p {
+    span {
         margin: auto;
         font-size: $fontSize-button;
         letter-spacing: 1px;
         color: $colour-secondary;
         margin-right: 7px;
 
-        @media screen and (max-width: 1028px) {
-            font-size: $fontSize-button-mobile;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-button-tablet;
         }
     }
 
-    @media screen and (max-width: 1028px) {
+    @media screen and (max-width: $mediaQuery-tablet) {
         padding: 5px 30px;
         margin-bottom: 50px;
     }
@@ -40,7 +40,7 @@
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
 
-        @media screen and (max-width: 1028px) {
+        @media screen and (max-width: $mediaQuery-tablet) {
             width: 2px;
             height: 2px;
             margin: 5px 0.1px;
