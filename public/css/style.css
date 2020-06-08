@@ -470,7 +470,7 @@ main {
 }
 .grille__menu {
   margin: 20px;
-  width: calc(25% - 41px);
+  width: calc(25% - 42px);
   height: 350px;
   border: #e6e6e6 solid 0.5px;
   box-shadow: 1.5px 1.5px 1.5px #000000;
@@ -481,7 +481,7 @@ main {
 @media screen and (max-width: 1200px) {
   .grille__menu {
     margin: 15px;
-    width: calc(50% - 31px);
+    width: calc(50% - 32px);
     height: 350px;
   }
 }
