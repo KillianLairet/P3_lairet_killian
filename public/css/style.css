@@ -96,11 +96,13 @@ header h1 {
 }
 @media screen and (max-width: 1200px) {
   .grille__menu span {
-    font-size: 0.9em;
+    font-size: 1.5em;
   }
 }
-.grille__menu--la-note-enchantee {
-  background-color: #fcdfcb;
+@media screen and (max-width: 650px) {
+  .grille__menu span {
+    font-size: 1em;
+  }
 }
 .grille__menu--la-note-enchantee span {
   color: #000000;
@@ -110,9 +112,6 @@ header h1 {
   font-family: "Caveat";
   text-transform: uppercase;
 }
-.grille__menu--le-chic-a-la-francaise {
-  background-color: #fff5fe;
-}
 .grille__menu--le-chic-a-la-francaise span {
   color: #a367cb;
   font-family: "Vollkorn";
@@ -120,18 +119,12 @@ header h1 {
 .grille__menu--le-chic-a-la-francaise .style-menu2 {
   font-family: "Vollkorn-italic";
 }
-.grille__menu--le-delice-des-papilles {
-  background-color: #edefef;
-}
 .grille__menu--le-delice-des-papilles span {
   color: #0000ff;
   font-family: "Dancing Script";
 }
 .grille__menu--le-delice-des-papilles .style-menu3 {
   font-family: "Shadows Into Light";
-}
-.grille__menu--la-palette-du-gout {
-  background-color: #fdfffd;
 }
 .grille__menu--la-palette-du-gout span {
   color: #79c55a;
@@ -155,15 +148,25 @@ h1 {
 }
 @media screen and (max-width: 1200px) {
   .menu-page h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .menu-page h1 {
+    font-size: 1.2em;
   }
 }
 .menu-page h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 @media screen and (max-width: 1200px) {
   .menu-page h2 {
-    font-size: 0.7em;
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .menu-page h2 {
+    font-size: 0.8em;
   }
 }
 .menu-page .smaller-title {
@@ -171,7 +174,12 @@ h1 {
 }
 @media screen and (max-width: 1200px) {
   .menu-page .smaller-title {
-    font-size: 0.7em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .menu-page .smaller-title {
+    font-size: 0.8em;
   }
 }
 .menu-page--la-note-enchantee h1 {
@@ -207,6 +215,11 @@ h1 {
   font-size: 1.5em;
 }
 @media screen and (max-width: 1200px) {
+  .dishes {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 650px) {
   .dishes {
     font-size: 0.7em;
   }
@@ -330,6 +343,10 @@ h1 {
   }
 }
 
+ul {
+  padding: 0px;
+}
+
 li {
   list-style-type: none;
 }
@@ -359,9 +376,9 @@ li {
 }
 .menu-page h2 {
   width: fit-content;
-  font-size: 1.5em;
   margin: 10px 10px;
   text-decoration: none;
+  text-align: center;
   background: linear-gradient(to top, #000000 0%, #000000 2px, transparent 3px) no-repeat;
   background-size: 0% 100%;
   transition: background-size 300ms ease;
@@ -494,6 +511,18 @@ main {
 }
 .grille__menu span {
   margin: 10px;
+}
+.grille__menu--la-note-enchantee {
+  background-color: #fcdfcb;
+}
+.grille__menu--le-chic-a-la-francaise {
+  background-color: #fff5fe;
+}
+.grille__menu--le-delice-des-papilles {
+  background-color: #edefef;
+}
+.grille__menu--la-palette-du-gout {
+  background-color: #fdfffd;
 }
 
 .menu-page--la-note-enchantee {

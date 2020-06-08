@@ -50,9 +50,11 @@ header{
             @media screen and (max-width: $mediaQuery-tablet) {
                 font-size: $fontSize-index-span-tablet;
             }
+            @media screen and (max-width: $mediaQuery-mobile) {
+                font-size: $fontSize-index-span-mobile;
+            }
         }
         &--la-note-enchantee{
-            background-color: $colour-menu1;
             span{
                 color: $colour-menu1-title;
                 font-family: $font-menu1-title;
@@ -63,7 +65,6 @@ header{
             }
         }
         &--le-chic-a-la-francaise{
-            background-color: $colour-menu2;
             span{
                 color: $colour-menu2-title;
                 font-family: $font-menu2-title;
@@ -73,7 +74,6 @@ header{
             }
         }
         &--le-delice-des-papilles{
-            background-color: $colour-menu3;
             span{
                 color: $colour-menu3-title;
                 font-family: $font-menu3-title;
@@ -83,7 +83,6 @@ header{
             }
         }
         &--la-palette-du-gout{
-            background-color: $colour-menu4;
             span{
                 color: $colour-menu4-title;
                 font-family: $font-menu4-title;
@@ -106,19 +105,28 @@ h1{
     h1{
         font-size: $fontSize-menu-h1;
         @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-menu-h1-tablet;
+        }
+        @media screen and (max-width: $mediaQuery-mobile) {
             font-size: $fontSize-menu-h1-mobile;
         }
     }
     h2{
         font-size: $fontSize-menu-h2;
         @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-menu-h2-tablet;
+        }
+        @media screen and (max-width: $mediaQuery-mobile) {
             font-size: $fontSize-menu-h2-mobile;
         }
     }
     .smaller-title{
         font-size: 2.5em;
         @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: 0.7em;
+            font-size: 1.5em;
+        }
+        @media screen and (max-width: $mediaQuery-mobile) {
+            font-size: .8em;
         }
     }
     &--la-note-enchantee{
@@ -173,6 +181,9 @@ h1{
 .dishes{
     font-size: $fontSize-menu-text;
     @media screen and (max-width: $mediaQuery-tablet) {
+        font-size: $fontSize-menu-text-tablet;
+    }
+    @media screen and (max-width: $mediaQuery-mobile) {
         font-size: $fontSize-menu-text-mobile;
     }
     &__prices{

@@ -64,5 +64,17 @@ main{
         span{
             margin: 10px;
         }
+        &--la-note-enchantee{
+            background-color: $colour-menu1;
+        }
+        &--le-chic-a-la-francaise{
+            background-color: $colour-menu2;
+        }
+        &--le-delice-des-papilles{
+            background-color: $colour-menu3;
+        }
+        &--la-palette-du-gout{
+            background-color: $colour-menu4;
+        }
     }
 }

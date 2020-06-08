@@ -8,6 +8,9 @@ h1
         margin: 15px auto;
     }
 }
+ul{
+    padding: 0px;
+}
 li
 {
     list-style-type: none;
@@ -39,9 +42,9 @@ li
     h2
     {
         width: fit-content;
-        font-size: $fontSize-menu-h2;
         margin: 10px 10px;
         text-decoration: none;
+        text-align: center;
         background: linear-gradient(to top, $colour-menu1-title 0%, $colour-menu1-title 2px, transparent 3px) no-repeat;
         background-size: 0% 100%;
         transition: background-size 300ms ease;
