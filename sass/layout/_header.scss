@@ -8,12 +8,5 @@ header
     h1
     {
         margin: 0px;
-        font-family: 'Arial black';
-        font-size: $fontSize-header;
-        color: $colour-secondary;
-
-        @media screen and (max-width: 768px) {
-            font-size: $fontSize-header-mobile;
-        }
     }
 }

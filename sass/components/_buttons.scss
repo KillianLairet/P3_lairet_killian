@@ -12,14 +12,7 @@
     display: flex;
     span {
         margin: auto;
-        font-size: $fontSize-button;
-        letter-spacing: 1px;
-        color: $colour-secondary;
         margin-right: 7px;
-
-        @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: $fontSize-button-tablet;
-        }
     }
 
     @media screen and (max-width: $mediaQuery-tablet) {

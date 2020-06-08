@@ -3,12 +3,10 @@ main{
     flex-direction: column;
     position: relative;
     margin: auto;
+    margin-bottom: 50px;
     max-width: 1600px;
     @media screen and (max-width: $mediaQuery-tablet) {
         max-width: 900px;
-    }
-    @media screen and (max-width: $mediaQuery-mobile) {
-        max-width: 400px;
     }
 }
 
@@ -33,7 +31,6 @@ main{
         align-items: center;
 
         @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: $fontSize-index-span-tablet;
             margin: 15px;
             width: calc(50% - 31px);
             height: 350px;
@@ -66,54 +63,6 @@ main{
 
         span{
             margin: 10px;
-            font-size: $fontSize-index-span;
         }
-
-        &--la-note-enchantee{
-            background-color: $colour-menu1;
-            span{
-                color: $colour-menu1-title;
-                font-family: $font-menu1-title;
-            }
-            .style-menu1{
-                font-family: $font-menu1-text;
-                text-transform: uppercase;
-            }
-        }
-
-        &--le-chic-a-la-francaise{
-            background-color: $colour-menu2;
-            span{
-                color: $colour-menu2-title;
-                font-family: $font-menu2-title;
-            }
-            .style-menu2{
-                font-family: $font-menu2-text;
-            }
-        }
-
-        &--le-delice-des-papilles{
-            background-color: $colour-menu3;
-            span{
-                color: $colour-menu3-title;
-                font-family: $font-menu3-title;
-            }
-            .style-menu3{
-                font-family: $font-menu3-text;
-            }
-        }
-
-        &--la-palette-du-gout{
-            background-color: $colour-menu4;
-            span{
-                color: $colour-menu4-title;
-                font-family: $font-menu4-title;
-            }
-            .style-menu4{
-                font-family: $font-menu4-text;
-            }
-        }
-
-        
     }
 }

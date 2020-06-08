@@ -1,33 +1,4 @@
 .menu-page--le-chic-a-la-francaise
-{
-    background-color: $colour-menu2;
-
-    h1
     {
-        font-family: $font-menu2-title;
-        color: $colour-menu2-title;
+        background-color: $colour-menu2; 
     }
-    h2
-    {
-        font-family: $font-menu2-text;
-    } 
-}
-
-
-.dishes--le-chic-a-la-francaise
-{
-    font-family: $font-menu2-text;
-}
-
-.colour-menu2-top
-{
-    color: $colour-menu2-top;
-}
-.colour-menu2-middle
-{
-    color: $colour-menu2-middle;
-}
-.colour-menu2-bottom
-{
-    color: $colour-menu2-bottom;
-}

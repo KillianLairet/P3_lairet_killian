@@ -1,25 +1,11 @@
 .menu-page--la-note-enchantee
 {
     background-color: $colour-menu1;
-
-    h1
-    {
-        font-family: $font-menu1-title;
-        color: $colour-menu1-title;
-    }
-    h2
-    {
-        font-family: $font-menu1-text;
-    }
     &__bottom-title
     {
         display: flex;
         flex-direction: row;
     }
-}
-.dishes--la-note-enchantee
-{
-    font-family: $font-menu1-text;
 }
 
 .music-note

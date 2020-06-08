@@ -1,12 +1,10 @@
 h1
 {
-    font-size: 2.5em;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
 
     @media screen and (max-width: $mediaQuery-tablet) {
-        font-size: 1.3em;
         margin: 15px auto;
     }
 }
@@ -38,11 +36,9 @@ li
 
     h1
     {
-        font-size: $fontSize-menu-h1;
         margin: 0px 0px 50px 0px;
 
         @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: $fontSize-menu-h1-mobile;
             margin-bottom: 15px;
         }
     }
@@ -51,11 +47,6 @@ li
         width: fit-content;
         font-size: $fontSize-menu-h2;
         margin: 10px 10px;
-
-        @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: $fontSize-menu-h2-mobile;
-        }
-
         text-decoration: none;
         background: linear-gradient(to top, $colour-menu1-title 0%, $colour-menu1-title 2px, transparent 3px) no-repeat;
         background-size: 0% 100%;
@@ -67,14 +58,11 @@ li
     }
     .smaller-title
     {
-        font-size: 2.5em;
         margin: 40px 0px;
 
         @media screen and (max-width: $mediaQuery-tablet) {
-            font-size: 0.7em;
             margin: 9px auto;
         }
-    
     }
 }
 .h2-design
@@ -91,19 +79,20 @@ li
 
 .dishes
 {
-    font-size: $fontSize-menu-text;
     display: flex;
+    flex-direction: column;
     margin-bottom: 70px;
     width: 100%;
 
     @media screen and (max-width: $mediaQuery-tablet) {
-        font-size: $fontSize-menu-text-mobile;
         margin-bottom: 10px;
     }
 
     li
     {
         margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
         @media screen and (max-width: $mediaQuery-tablet) {
             margin: 3px 0px;
         }    
@@ -117,7 +106,6 @@ li
     {
         width: 10%;
         text-align: end;
-        font-weight: bolder;
     }
 }
 .dessert

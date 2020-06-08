@@ -8,3 +8,203 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: $colour-black;
 }
+
+header{
+    h1{
+        font-family: 'Arial black';
+        font-size: $fontSize-header;
+        color: $colour-secondary;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-header-mobile;
+        }
+    }
+}
+
+.footer{
+    &__4K-screen{
+        a{
+            font-size: $fontSize-footer;
+            color: $colour-secondary;
+            @media screen and (max-width: 1028px) {
+                font-size: $fontSize-footer-mobile;
+            }
+        }
+    }
+}
+
+.button{
+    span{
+        font-size: $fontSize-button;
+        letter-spacing: 1px;
+        color: $colour-secondary;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-button-tablet;
+        }
+    }
+}
+
+.grille{
+    &__menu{
+        span{
+            font-size: $fontSize-index-span;
+            @media screen and (max-width: $mediaQuery-tablet) {
+                font-size: $fontSize-index-span-tablet;
+            }
+        }
+        &--la-note-enchantee{
+            background-color: $colour-menu1;
+            span{
+                color: $colour-menu1-title;
+                font-family: $font-menu1-title;
+            }
+            .style-menu1{
+                font-family: $font-menu1-text;
+                text-transform: uppercase;
+            }
+        }
+        &--le-chic-a-la-francaise{
+            background-color: $colour-menu2;
+            span{
+                color: $colour-menu2-title;
+                font-family: $font-menu2-title;
+            }
+            .style-menu2{
+                font-family: $font-menu2-text;
+            }
+        }
+        &--le-delice-des-papilles{
+            background-color: $colour-menu3;
+            span{
+                color: $colour-menu3-title;
+                font-family: $font-menu3-title;
+            }
+            .style-menu3{
+                font-family: $font-menu3-text;
+            }
+        }
+        &--la-palette-du-gout{
+            background-color: $colour-menu4;
+            span{
+                color: $colour-menu4-title;
+                font-family: $font-menu4-title;
+            }
+            .style-menu4{
+                font-family: $font-menu4-text;
+            }
+        }
+    }
+}
+
+h1{
+    font-size: 2.5em;
+    @media screen and (max-width: $mediaQuery-tablet) {
+        font-size: 1.3em;
+    }
+}
+
+.menu-page{
+    h1{
+        font-size: $fontSize-menu-h1;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-menu-h1-mobile;
+        }
+    }
+    h2{
+        font-size: $fontSize-menu-h2;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: $fontSize-menu-h2-mobile;
+        }
+    }
+    .smaller-title{
+        font-size: 2.5em;
+        @media screen and (max-width: $mediaQuery-tablet) {
+            font-size: 0.7em;
+        }
+    }
+    &--la-note-enchantee{
+        h1
+        {
+            font-family: $font-menu1-title;
+            color: $colour-menu1-title;
+        }
+        h2
+        {
+            font-family: $font-menu1-text;
+        }
+    }
+    &--le-chic-a-la-francaise
+    {
+        h1
+        {
+            font-family: $font-menu2-title;
+            color: $colour-menu2-title;
+        }
+        h2
+        {
+            font-family: $font-menu2-text;
+        } 
+    }
+    &--le-delice-des-papilles
+    {
+        h1
+        {
+            font-family: $font-menu3-title;
+            color: $colour-menu3-title;
+        }
+        h2
+        {
+            font-family: $font-menu3-text;
+        } 
+    }
+    &--la-palette-du-gout
+    {
+        h1
+        {
+            font-family: $font-menu4-title;
+            color: $colour-menu4-title;
+        }
+        h2
+        {
+            font-family: $font-menu4-text;
+        } 
+    }
+}
+
+.dishes{
+    font-size: $fontSize-menu-text;
+    @media screen and (max-width: $mediaQuery-tablet) {
+        font-size: $fontSize-menu-text-mobile;
+    }
+    &__prices{
+        font-weight: bolder;
+    }
+    &--la-note-enchantee{
+        font-family: $font-menu1-text;
+    }
+    &--le-chic-a-la-francaise
+    {
+        font-family: $font-menu2-text;
+    }
+    &--le-delice-des-papilles
+    {
+        font-family: $font-menu3-text;
+    }
+    &--la-palette-du-gout
+    {
+        font-family: $font-menu4-text;
+    }    
+}
+
+.colour-menu2-top
+{
+    color: $colour-menu2-top;
+}
+.colour-menu2-middle
+{
+    color: $colour-menu2-middle;
+}
+.colour-menu2-bottom
+{
+    color: $colour-menu2-bottom;
+}
+
