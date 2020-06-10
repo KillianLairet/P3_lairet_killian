@@ -34,7 +34,6 @@ li
     h1
     {
         margin: 0px 0px 50px 0px;
-
         @media screen and (max-width: $mediaQuery-tablet) {
             margin-bottom: 15px;
         }
@@ -92,7 +91,13 @@ li
         justify-content: space-between;
         @media screen and (max-width: $mediaQuery-tablet) {
             margin: 3px 0px;
-        }    
+            flex-direction: column-reverse;
+            span{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
     }
 
     &__names

@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "Ma Shan Zheng";
-  src: url("../fonts/MaShanZheng-Regular.ttf");
-}
-@font-face {
   font-family: "Caveat";
   src: url("../fonts/Caveat-Regular.ttf");
 }
@@ -106,7 +102,7 @@ header h1 {
 }
 .grille__menu--la-note-enchantee span {
   color: #000000;
-  font-family: "Ma Shan Zheng";
+  font-family: "Kaushan Script";
 }
 .grille__menu--la-note-enchantee .style-menu1 {
   font-family: "Caveat";
@@ -141,6 +137,22 @@ h1 {
   h1 {
     font-size: 1.3em;
   }
+}
+
+.title-gradient--menu2 {
+  background: -webkit-linear-gradient(-70deg, #e38a12, #8f5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-gradient--menu3 {
+  background: -webkit-linear-gradient(-70deg, #133ce0, #62b1fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-gradient--menu4 {
+  background: -webkit-linear-gradient(-70deg, #43973d, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu-page h1 {
@@ -183,7 +195,7 @@ h1 {
   }
 }
 .menu-page--la-note-enchantee h1 {
-  font-family: "Ma Shan Zheng";
+  font-family: "Kaushan Script";
   color: #000000;
 }
 .menu-page--la-note-enchantee h2 {
@@ -191,21 +203,18 @@ h1 {
 }
 .menu-page--le-chic-a-la-francaise h1 {
   font-family: "Vollkorn";
-  color: #a367cb;
 }
 .menu-page--le-chic-a-la-francaise h2 {
   font-family: "Vollkorn-italic";
 }
 .menu-page--le-delice-des-papilles h1 {
   font-family: "Dancing Script";
-  color: #0000ff;
 }
 .menu-page--le-delice-des-papilles h2 {
   font-family: "Shadows Into Light";
 }
 .menu-page--la-palette-du-gout h1 {
   font-family: "Kaushan Script";
-  color: #79c55a;
 }
 .menu-page--la-palette-du-gout h2 {
   font-family: "Shadows Into Light";
@@ -221,7 +230,7 @@ h1 {
 }
 @media screen and (max-width: 650px) {
   .dishes {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 }
 .dishes__prices {
@@ -424,6 +433,11 @@ li {
 @media screen and (max-width: 1200px) {
   .dishes li {
     margin: 3px 0px;
+    flex-direction: column-reverse;
+  }
+  .dishes li span {
+    width: 100%;
+    text-align: center;
   }
 }
 .dishes__names {

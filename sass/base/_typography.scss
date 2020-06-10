@@ -100,7 +100,23 @@ h1{
         font-size: 1.3em;
     }
 }
-
+.title-gradient{
+    &--menu2{
+        background: -webkit-linear-gradient(-70deg, $colour-menu2-start, $colour-menu2-end);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &--menu3{
+        background: -webkit-linear-gradient(-70deg, $colour-menu3-start, $colour-menu3-end);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &--menu4{
+        background: -webkit-linear-gradient(-70deg, $colour-menu4-start, $colour-menu4-end);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 .menu-page{
     h1{
         font-size: $fontSize-menu-h1;
@@ -145,7 +161,6 @@ h1{
         h1
         {
             font-family: $font-menu2-title;
-            color: $colour-menu2-title;
         }
         h2
         {
@@ -157,7 +172,6 @@ h1{
         h1
         {
             font-family: $font-menu3-title;
-            color: $colour-menu3-title;
         }
         h2
         {
@@ -169,7 +183,6 @@ h1{
         h1
         {
             font-family: $font-menu4-title;
-            color: $colour-menu4-title;
         }
         h2
         {
@@ -218,4 +231,3 @@ h1{
 {
     color: $colour-menu2-bottom;
 }
-

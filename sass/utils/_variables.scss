@@ -13,15 +13,17 @@ $colour-menu2-title: #a367cb;
 $colour-menu2-top: #c67412;
 $colour-menu2-middle: #a56799;
 $colour-menu2-bottom: #6e4ccc;
+$colour-menu2-start: #e38a12;
+$colour-menu2-end: #8f5aff;
 $colour-menu3: #edefef;
 $colour-menu3-title: #0000ff;
+$colour-menu3-start: #133ce0;
+$colour-menu3-end: #62b1fb;
 $colour-menu4: #fdfffd;
 $colour-menu4-title: #79c55a;
+$colour-menu4-start: #43973d;
+$colour-menu4-end: #beff7f;
 
-@font-face {
-    font-family: 'Ma Shan Zheng';
-    src: url('../fonts/MaShanZheng-Regular.ttf');
-}
 @font-face {
     font-family: 'Caveat';
     src: url('../fonts/Caveat-Regular.ttf');
@@ -47,7 +49,7 @@ $colour-menu4-title: #79c55a;
     src: url('../fonts/KaushanScript-Regular.ttf');
 }
 
-$font-menu1-title: 'Ma Shan Zheng';
+$font-menu1-title: 'Kaushan Script';
 $font-menu1-text: 'Caveat';
 $font-menu2-title: 'Vollkorn';
 $font-menu2-text: 'Vollkorn-italic';
@@ -73,7 +75,7 @@ $fontSize-menu-h2-tablet: 1.3em;
 $fontSize-menu-h2-mobile: .8em;
 $fontSize-menu-text: 1.5em;
 $fontSize-menu-text-tablet: 1em;
-$fontSize-menu-text-mobile: .7em;
+$fontSize-menu-text-mobile: 1em;
 
 $wiggle-effect: 2%;
 
